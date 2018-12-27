@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+
+}
+a.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #80c152;
+}
+a.navbar-brand:focus{
+    color: #93bb11;
+    transition: 0.2s ease-in;
+}
+#particles-js{
+    height: 100%;
+    background-image: url("../img/background.png") ; 
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 25px;
+   
+
+}
+#preloader{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index:999;
+	overflow: visible;
+	top: 0;
+	left: 0;
+	background: #050505 url('../img/nobg.gif') no-repeat center center;
+}
+.main-content{
+    background: #f5f2f2;
+    opacity: .96;
+    text-align: center;
+    height: 600px;
+    
+}
+.main-content-diagnose{
+    background: #f5f2f2;
+    opacity: .96;
+    min-height: 650px; 
+}
+.content-text{
+    padding-top: 200px;
+    text-align: center;
+}
+.content-text h1{
+    color: #80c152;
+}
+.btn-start{
+    padding:18px;
+    background: none;
+    color:#050505;
+}
+.btn-start:hover{
+    background: #80c152;
+    transition: .25s ease-in-out;
+    border: none;
+}
+.phone-model h3{
+    text-align: left;
+    color: #80c152
+}
+.model-card{
+    width: 180px;
+    height: 150px;
+    margin: 1rem;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 3px 3px 1px rgba(0, 0, 0, .14), 0 3px 3px 2px rgba(0, 0, 0, .12), 0 2px 2px -3px rgba(0, 0, 0, .2);
+}
+
+.model-card a:hover{
+    text-decoration: none;
+}
+
+.model-text{
+    text-align: center;
+    background: #bfbdbd;
+    color: #050505;
+    font-weight: 100;
+    width: 180px;
+    padding: 7px;
+}
+.model-card:hover{
+    margin: 1rem;
+    position: relative;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+}
+.model-card:hover .model-text{
+    background: #80c152;
+    color: #f5f2f2;
+    font-weight: 300;
+    transition: 0.25s ease-in-out;
+
+
+}
+.phone-model input[type=text]{
+    background:none;
+    border-top:none;
+    border-bottom:1px solid #bfbdbd;
+    padding: 10px;
+    border-right: none;
+    border-left:none;
+    width: 90%;
+}
+.phone-model input[type=text]:focus{
+    background:none;
+    border-top:none;
+    padding: 10px;
+    box-shadow: none;
+    outline: none;
+    border-bottom:1px solid #80c152;
+    border-right: none;
+    border-left:none;
+}
+
+
+
+/* radio button styling */
+
+.rb-box {
+    width: 80%;
+    max-width: 550px;
+    margin: 70px auto;
+    margin-top:50px;
+    padding: 1.3em;
+    background: #050505;
+    border-radius: .75em;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    box-shadow: 
+      0 2px 2px rgba(243,49,128,.5),
+      0 0px 5px rgba(243,49,128,.15),
+      0 0px 4px rgba(0,0,0,.35),
+      0 5px 20px rgba(243,49,128,.25),
+      0 15px 50px rgba(243,49,128,.75),
+      inset 0 0 15px rgba(255,255,255,.05);
+  }
+  
+  /* Custom Radio Button */
+.question {
+    font-size: .9em;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .rb {
+    padding: 16px 0px;
+    text-align: center;
+    background: rgba(252, 251, 251, 0.05);
+    border-radius: .3em;
+  }
+  
+  .rb-tab {
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    margin-right: 0px;
+  }
+  
+  .rb-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 45px;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #FFFFFF;
+  }
+  
+  .rb-spot {
+    position: absolute;
+    width: 65px;
+    height: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: ease .5s;
+  }
+  
+  .rb-tab-active .rb-spot {
+    background: rgba(0,0,0,.35);
+    border: 2px solid rgba(243,49,128,.6);
+    
+  }
+  
+  /* Submit Button */
+  .button-box {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  button, button.btn-modal {
+    display: inline-block;
+    width: 80%;
+    margin-top: 1.2em;
+    padding: 1em;
+    max-width: 220px;
+    font-size: .9em;
+    color: #D42D78;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: 
+      color 0.6s, 
+      box-shadow 0.3s, 
+      transform 0.3s;
+    cursor: pointer;
+  }
+  button.btn-modal:hover{
+    background:#80c152;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 80%;
+    margin-top: 1.2em;
+    padding: 1em;
+    max-width: 220px;
+    font-size: .9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    border: none;
+    outline: none;
+    border-radius: 5em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: 
+      color 0.6s, 
+      box-shadow 0.3s, 
+      transform 0.3s;
+    cursor: pointer;
+  }
+  .questions-list{
+    background: rgba(252, 251, 251, 0.05);  
+    color: #FFFFFF;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 7px;
+
+  }
+  .questions-list input[type="radio"]{
+    width: 20px;
+  }
+  button:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    color: #6f6f6f;
+  }
+
+.list-group-item{
+    margin-top: 20px;
+    cursor: pointer;
+}
+.fa-fault{
+    float:right;
+}
+.tip{
+    display: none;
+    padding: 20px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.tip-h5{
+    color: #80c152;
+}
+.tip-h5 ul{
+    list-style-type: circle;
+}
+.tip-h5 ul ul{
+    list-style-type: circle;
+}
+.inner-h5{
+    font-weight: bold;
+}
+button.btn-sign{
+  color: #ffffff;
+  background: #80c152;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+  filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+  max-height: 30px;
+  width: 110px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 20px;
+ 
+}
+button.btn-sign-user{
+    color: #ffffff;
+    background: #80c152;
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    max-height: 30px;
+  width: 200px;
+
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 20px;
+
+}
+
+  /* Radio buttons */
+
+  
+  
+  
