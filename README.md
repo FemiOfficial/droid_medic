@@ -1,2 +1,2 @@
 # droid_medic
-url: droidmedic.epizy.com
+url: http://www.droidmedic.epizy.com
