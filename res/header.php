@@ -29,6 +29,7 @@ if(isset($_POST["btn-logout"])){
     <!-- CSS Files  -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script type = "text/javascript" src="js/jquery-2.1.4.min.js"></script>
   
@@ -57,21 +58,15 @@ if(isset($_POST["btn-logout"])){
       <a class="navbar-brand" href="#" style = "color: #80c152">DroidMedic</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <!-- <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Page 1</a></li>
-        <li><a href="#">Page 2</a></li> 
-        <li><a href="#">Page 3</a></li> 
-      </ul> -->
       <ul class="nav navbar-nav navbar-right">
         <?php
           if(isset($_SESSION["id"])){
             ?>
-      <li><button class="btn-sign-user" id= "btn-reg" ><span class="glyphicon glyphicon-user"></span> <?php echo "Hi, ".$_SESSION["username"]; ?></button></li>
+      <li><button class="btn-sign-user" id= "btn-reg" ><i class="fas fa-user"></i> <?php echo "Hi, ".$_SESSION["username"]; ?></button></li>
         <li>
           <form method="post" role = "form" class="register-form">    
           <button type = "submit" class="btn-sign" id= "btn-login" name = "btn-logout">
-          <span class="glyphicon glyphicon-log-in"></span>
+          <i class="fas fa-sign-out-alt"></i>
           Log Out
           </button>   
 	      	</form>
@@ -81,8 +76,8 @@ if(isset($_POST["btn-logout"])){
           }else{  
             
         ?>
-        <li><button class="btn-sign" id= "btn-reg" data-toggle ="modal" data-target="#modal-reg"><span class="glyphicon glyphicon-user"></span> Sign Up</button></li>
-        <li><button class="btn-sign" id= "btn-login" data-toggle ="modal" data-target="#modal-login"><span class="glyphicon glyphicon-log-in"></span> Sign In</button></li>
+        <li><button class="btn-sign" id= "btn-reg" data-toggle ="modal" data-target="#modal-reg"><i class="fas fa-user-plus"></i> Sign Up</button></li>
+        <li><button class="btn-sign" id= "btn-login" data-toggle ="modal" data-target="#modal-login"><i class="fas fa-sign-in-alt"></i> Sign In</button></li>
           <?php
               }
           ?>

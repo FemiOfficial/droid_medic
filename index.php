@@ -5,7 +5,7 @@ include_once "res/header.php";
 
 ?>
 
-    <div id = "particles-js">
+    <div id = "particles">
         
         <div class = "container ">
             
@@ -24,10 +24,10 @@ include_once "res/header.php";
             <?php
                     }
                 ?>
-                <div class = "col-md-10 col-md-offset-1  main-content">
+                <div class = "col-md-10 col-md-offset-1  main-content" >
                     <p class = "content-text">
-                        <h1 style=" color: #80c152;font-weight: 300;"> DroidMedic</h1>
-                        <span class = "hint">Expert System for Troubleshooting <span style = "color: #80c152;font-weight:bold;">Android</span> Phones</span><br><br>
+                        <h1 style=" color: #80c152;font-weight: 900;font-size: 40px;"> DroidMedic</h1>
+                        <span class = "hint" style="color: #fff;">Expert System for Troubleshooting <span style = "color: #fff;font-weight:bold; background: #80c152; padding: 5px;">Android</span> Phones</span><br><br>
                         <?php
                             if(isset($_SESSION["login-status"])){
                         ?>
@@ -63,7 +63,9 @@ include_once "res/header.php";
 	    	</div>
   </div>
 
-
+   <?php
+        include_once "res/footer.php";        
+    ?>
     <!-- Scipts for js -->
     
     <script  type = "text/javascript" src="js/particles.js"></script>

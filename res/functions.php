@@ -58,7 +58,6 @@ function signIn(){
 				else{
 
 					$_SESSION['login-status'] = false;
-					echo $sql;
 
 					?>
 						

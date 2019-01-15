@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    min-height:100vh;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -15,14 +15,21 @@ a.navbar-brand:focus{
     color: #93bb11;
     transition: 0.2s ease-in;
 }
-#particles-js{
-    height: 100%;
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#f5f5f5;
+   color: #333;
+   text-align: center;
+}
+#particles{
     background-image: url("../img/background.png") ; 
+    background-size:  cover;  
     overflow: hidden;
     margin-top: 50px;
     padding: 25px;
-   
-
 }
 #preloader{
 	position: fixed;
@@ -35,7 +42,8 @@ a.navbar-brand:focus{
 	background: #050505 url('../img/nobg.gif') no-repeat center center;
 }
 .main-content{
-    background: #f5f2f2;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../img/bg-android.jpg') no-repeat 0px 0px;
+    background-size:cover;
     opacity: .96;
     text-align: center;
     height: 600px;
@@ -56,9 +64,10 @@ a.navbar-brand:focus{
 .btn-start{
     padding:18px;
     background: none;
-    color:#050505;
+    color:#ffffff;
 }
 .btn-start:hover{
+    color:#fff;
     background: #80c152;
     transition: .25s ease-in-out;
     border: none;
@@ -68,8 +77,8 @@ a.navbar-brand:focus{
     color: #80c152
 }
 .model-card{
-    width: 180px;
-    height: 150px;
+    min-width: 180px;
+    min-height: 150px;
     margin: 1rem;
     padding: 0;
     position: relative;
@@ -85,7 +94,7 @@ a.navbar-brand:focus{
     background: #bfbdbd;
     color: #050505;
     font-weight: 100;
-    width: 180px;
+    min-width: 180px;
     padding: 7px;
 }
 .model-card:hover{
@@ -162,7 +171,7 @@ a.navbar-brand:focus{
   .rb-tab {
     display: inline-block;
     position: relative;
-    width: 20%;
+    width: 40%;
     margin-right: 0px;
   }
   

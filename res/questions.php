@@ -20,10 +20,10 @@
                 <option>Battery</option>
                 <option>Operating System</option>
                 <option>Internet Connection</option>
-                <option>Mobile Hotspot</option>
+        
                 <option>Bluetooth</option>
                 <option>Messages</option>
-                <option>Power Options</option>              
+                         
             </select>
     </div>
     <div class = "new">
