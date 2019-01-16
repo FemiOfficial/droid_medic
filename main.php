@@ -183,7 +183,7 @@ if(isset($_POST["btn-logout"])){
             <div class = "row">
                 <div class = "col-md-10 col-md-offset-1  main-content-diagnose">
                     <div class = "row phone-model col-md-offset-1 ">
-                        <h3><i class="fa fa-mobile" style="padding:10px;" aria-hidden="true"></i>Phone Brand</h3>
+                        <h3><i class="fa fa-mobile" style="padding:10px;" aria-hidden="true"></i>Select your Phone Brand</h3>
                 <?php 
 					$sql = "SELECT * FROM models ORDER BY 'id' desc";
 					$run_user = mysqli_query($conn, $sql);

@@ -180,7 +180,7 @@ if(isset($_POST["btn-logout"])){
             <div class = "row">
                 <div class = "col-md-10 col-md-offset-1  main-content-diagnose">
                     <div class = "row phone-model col-md-offset-1 ">
-                        <h3><i class="fas fa-stethoscope" style="padding-right:10px;"></i> Diagnosis</h3>
+                        <h3><i class="fas fa-stethoscope" style="padding-right:10px;"></i>Please answer few questions for Diagnosis</h3>
                         <div class="rb-box">
                                 <!-- Radio Button Module -->
                                 <div class = "question-box-1" >
