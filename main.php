@@ -28,10 +28,12 @@ if(isset($_POST["btn-logout"])){
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Diagnose Android Phone</title>
+   <title>DroidMedic::Diagnose Android Phone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS Files  -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">

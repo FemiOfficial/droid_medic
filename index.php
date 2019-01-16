@@ -27,7 +27,7 @@ include_once "res/header.php";
                 <div class = "col-md-10 col-md-offset-1  main-content" >
                     <p class = "content-text">
                         <h1 style=" color: #80c152;font-weight: 900;font-size: 40px;"> DroidMedic</h1>
-                        <span class = "hint" style="color: #fff;">Expert System for Troubleshooting <span style = "color: #fff;font-weight:bold; background: #80c152; padding: 5px;">Android</span> Phones</span><br><br>
+                        <span class = "hint" style="color: #fff;font-size: 18px;">Expert System for Troubleshooting <span style = "color: #fff;font-weight:bold; background: #80c152; padding: 5px;">Android</span> Phones</span><br><br>
                         <?php
                             if(isset($_SESSION["login-status"])){
                         ?>
