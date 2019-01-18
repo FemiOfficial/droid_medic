@@ -62,7 +62,7 @@ if(isset($_POST["btn-logout"])){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#" style = "color: #80c152"> DroidMedic</a>
+      <a class="navbar-brand" href="index.php" style = "color: #80c152"> DroidMedic</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <!-- <ul class="nav navbar-nav">
@@ -180,7 +180,7 @@ if(isset($_POST["btn-logout"])){
             <div class = "row">
                 <div class = "col-md-10 col-md-offset-1  main-content-diagnose">
                     <div class = "row phone-model col-md-offset-1 ">
-                        <h3><i class="fas fa-stethoscope" style="padding-right:10px;"></i>Please answer few questions for Diagnosis</h3>
+                        <h3><i class="fas fa-stethoscope" style="padding-right:10px;"></i> Diagnosis</h3>
                         <div class="rb-box">
                                 <!-- Radio Button Module -->
                                 <div class = "question-box-1" >

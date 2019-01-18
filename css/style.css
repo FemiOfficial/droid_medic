@@ -42,7 +42,7 @@ a.navbar-brand:focus{
 	background: #050505 url('../img/nobg.gif') no-repeat center center;
 }
 .main-content{
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../img/bg-android.jpg') no-repeat 0px 0px;
+    background:url('../img/bg-android.jpg') no-repeat 0px 0px;
     background-size:cover;
     opacity: .96;
     text-align: center;

@@ -87,7 +87,7 @@ while($row = mysqli_fetch_array($result)){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#" style = "color: #80c152">DroidMedic</a>
+      <a class="navbar-brand" href="index.php" style = "color: #80c152">DroidMedic</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <!-- <ul class="nav navbar-nav">
@@ -211,33 +211,44 @@ while($row = mysqli_fetch_array($result)){
                                      
                         <?php
                                     include "res/tips.php";
+                                if(count($questions) == 0){
 
+                                       ?>
+                                         <script type="text/javascript">
+                                           alert("No fault is selected");
+                                           window.open('diagnosis.php', '_self')
+                                         </script>
+
+                                       <?php
+                                  
+
+                                }else{
+                                $value_to_show = "";
                                 for($i = 0; $i <= count($questions) - 1; $i++){
                                     $fault_iss = $questions[$i];
+
                                     if($_POST[$fault_iss] == "1"){
                                         $sql = "SELECT * FROM fault_questions WHERE id = '$fault_iss'";
                                         $result = mysqli_query($conn, $sql);
                                         $row = mysqli_fetch_array($result);
-                        ?>
-                                                <li class="list-group-item" id = "no-<?php echo $fault_iss; ?>"  >
-                                                    <?php echo $row['fault'];  ?>
-                                                    <span class = "fa fa-caret-down fa-fault"></span>
-                                                </li>     
-                         <?php
-                                  
+
+                                        $value_to_show = $value_to_show."                
+                                      <li class='list-group-item' id = 'no-<?php echo $fault_iss; ?>'>".
+                                          $row['fault'].
+                                          "<span class = 'fa fa-caret-down fa-fault'></span>
+                                      </li>   
+                                      ";                                                                     
                                     }
-                                    
                                     else{
-                                      ?>
-                                        <script type="text/javascript">
-                                          alert("No fault selected");
-                                          window.open('diagnosis.php', '_self')
-                                        </script>
-
-                                      <?php
+                                      $value_to_show = $value_to_show."";
                                     }
-
+                                                                      
                                 }
+                                echo $value_to_show;
+
+                              }
+                                
+
                         ?>
                              </ul>
                                            

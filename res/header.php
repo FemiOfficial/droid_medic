@@ -57,7 +57,7 @@ if(isset($_POST["btn-logout"])){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#" style = "color: #80c152">DroidMedic</a>
+      <a class="navbar-brand" href="index.php" style = "color: #80c152">DroidMedic</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">

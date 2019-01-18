@@ -31,11 +31,11 @@ include_once "res/header.php";
                         <?php
                             if(isset($_SESSION["login-status"])){
                         ?>
-                        <button class = "btn-lg btn-danger btn-start" onclick = "window.open('main.php', '_self')">Start Diagnosis</button>
+                        <button class = "btn-lg btn-danger btn-start"  onclick = "window.open('main.php', '_self')"><span style="font-weight: bold;">Click</span> & Begin <span style="font-weight: 1000;">Diagnosis</span></button>
                         <?php
                             }else{
                         ?>
-                        <button class = "btn-lg btn-danger btn-start" data-toggle ="modal" data-target="#warning">Start Diagnosis</button>
+                        <button class = "btn-lg btn-danger btn-start" data-toggle ="modal" data-target="#warning"><span style="font-weight: 1000;">Click</span> & Begin <span style="font-weight: 1000;">Diagnosis</span></button>
                         <?php
                             }
                         ?>
