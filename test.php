@@ -87,7 +87,7 @@ while($row = mysqli_fetch_array($result)){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="index.php" style = "color: #80c152">DroidMedic</a>
+      <a class="navbar-brand" href="index.php " style = "color: #80c152">DroidMedic</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <!-- <ul class="nav navbar-nav">
@@ -189,13 +189,6 @@ while($row = mysqli_fetch_array($result)){
   </div>
 
 
-
-
-
-
-
-
-
     <div id = "particles">
         
         <div class = "container ">
@@ -207,10 +200,9 @@ while($row = mysqli_fetch_array($result)){
                         <h3><i class="fas fa-receipt" style="padding-right: 30px;"></i>Troubleshooting Tips</h3>
                         <a class=" btn btn-danger" href="diagnosis.php" style="float: right;margin-right: 30px;margin-bottom:  30px;" >Return to Diagnosis </a>
                         <div class = "col-md-9 col-md-offset-1">
-                                            <ul class="list-group">
+                      <ul class="list-group">
                                      
                         <?php
-                                    include "res/tips.php";
                                 if(count($questions) == 0){
 
                                        ?>
@@ -222,7 +214,11 @@ while($row = mysqli_fetch_array($result)){
                                        <?php
                                   
 
-                                }else{
+                                }
+                                else
+                                {
+                                include "res/tips.php";
+
                                 $value_to_show = "";
                                 for($i = 0; $i <= count($questions) - 1; $i++){
                                     $fault_iss = $questions[$i];
@@ -233,7 +229,7 @@ while($row = mysqli_fetch_array($result)){
                                         $row = mysqli_fetch_array($result);
 
                                         $value_to_show = $value_to_show."                
-                                      <li class='list-group-item' id = 'no-<?php echo $fault_iss; ?>'>".
+                                      <li class='list-group-item' id = 'no-$fault_iss'>".
                                           $row['fault'].
                                           "<span class = 'fa fa-caret-down fa-fault'></span>
                                       </li>   
@@ -241,10 +237,20 @@ while($row = mysqli_fetch_array($result)){
                                     }
                                     else{
                                       $value_to_show = $value_to_show."";
-                                    }
-                                                                      
+                                    }                                                                    
                                 }
-                                echo $value_to_show;
+                                 if($value_to_show == ""){
+                                    
+                                       ?>
+                                         <script type="text/javascript">
+                                           alert("No fault is selected");
+                                           window.open('diagnosis.php', '_self')
+                                         </script>
+
+                                       <?php
+                                }else{
+                                    echo $value_to_show;
+                                }
 
                               }
                                 
