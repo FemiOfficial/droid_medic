@@ -1,18 +1,21 @@
 # droid_medic
 url: http://www.droidmedic.epizy.com
 
+## How to clone
+*git clone https://github.com/FemiOfficial/droid_medic.git*
+
 ## Installation
  - Download and Install XAMPP Local Server
- - Clone Repository or download the repository to your computer on *c:/xampp/htdocs* 
+ - Clone Repository or download the repository to your computer on *c:/xampp/htdocs* directory 
  - Import the Database in the */db* directory
  - Load up the application on the browser localhost 
  
  ## How to use
-  - Users on the system must be authentication through authentication module before they can use the application
+  - Users on the system must be authenticated through authentication module before they can use the application
   
   ### User Authentication Process
   - Click 'Sign Up' on the homepage to create an account on the system
-  - Proceed to login with the registered Email and Password
+  - Proceed to login (Click on Sign In) with the registered Email and Password
   - On successful login, Click on the 'Begin Diagnosis' to perform diagnosis
   - Select you abdroid phone brand/manufacturer from the Grid Options displayed, else fill out your brand if its not listed
   
