@@ -26,6 +26,6 @@ url: http://www.droidmedic.epizy.com
   - The system display related faults to the category selected (Select True, False or Not Sure)
   - Finally click on 'Perform Diagnosis' to do Diagnosis
   - View Diagnosis results and follow prescribed solutions
-  - You may Logout of the system or Perform Another Diagnosis by click the respective buttons the do specific functionalities
+  - You may Logout of the system or Perform Another Diagnosis by clicking the respective buttons the do specific functionalities
   
   
